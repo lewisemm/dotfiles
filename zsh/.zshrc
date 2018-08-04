@@ -1,13 +1,21 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=/opt/mongodb-osx-x86_64-4.0.0/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/maina/.oh-my-zsh
+export ZSH="/Users/maina/.oh-my-zsh"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="robbyrussell"
+
+# Set list of themes to load
+# Setting this variable when ZSH_THEME=random
+# cause zsh load theme from this variable instead of
+# looking in ~/.oh-my-zsh/themes/
+# An empty array have no effect
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -51,7 +59,9 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(
+  git
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -84,59 +94,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-[[ -s "$HOME/.profile" ]] && source "$HOME/.profile" # Load the default .profile
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
-PATH=$PATH:/Users/maina/opt/apache-maven-3.3.9/bin:/Applications/Postgres.app/Contents/Versions/9.5/bin
-export PATH
-export PROJECT_HOME=~/projects/
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home
-export WORKON_HOME=~/Envs
-source /usr/local/bin/virtualenvwrapper.sh
-source /usr/local/opt/autoenv/activate.sh
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
-alias grep='grep --color=auto'
-alias gst='git status'
-alias gcm='git commit'
-alias gd='git diff'
-alias ga='git add'
-alias gbr='git branch'
-alias gch='git checkout'
-alias gp='git push'
-alias cw='cd ~/projects'
-alias pgle='ping google.com'
-alias mktmpenv='mktmpenv && cd -'
-export PATH=$PATH:/Users/maina/opt/mongodb-osx-x86_64-3.2.8/bin/
-export CLICOLOR=1
-export LSCOLORS=CxGxCxDxhxegedabagacHB
-[[ -s "$HOME/.profile" ]] && source "$HOME/.profile" # Load the default .profile
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
-PATH=$PATH:/Users/maina/opt/apache-maven-3.3.9/bin:/Applications/Postgres.app/Contents/Versions/9.5/bin
-export PATH
-export PROJECT_HOME=~/projects/
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home
-export WORKON_HOME=~/Envs
-source /usr/local/bin/virtualenvwrapper.sh
-source /usr/local/opt/autoenv/activate.sh
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
-alias grep='grep --color=auto'
-alias gst='git status'
-alias gcm='git commit'
-alias gd='git diff'
-alias ga='git add'
-alias gbr='git branch'
-alias gch='git checkout'
-alias gp='git push'
-alias cw='cd ~/projects'
-alias pgle='ping google.com'
-alias mktmpenv='mktmpenv && cd -'
-export PATH=$PATH:/Users/maina/opt/mongodb-osx-x86_64-3.2.8/bin/
-export CLICOLOR=1
-export LSCOLORS=CxGxCxDxhxegedabagacHB
+# cd into projects folder
+alias cw="cd ~/projects"
+alias gcm="git commit -S"
+alias ga="git add"
+alias gst="git status"
+alias gd="git diff"
+alias pgle="ping www.google.com"
