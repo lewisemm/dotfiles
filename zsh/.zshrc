@@ -101,3 +101,7 @@ alias ga="git add"
 alias gst="git status"
 alias gd="git diff"
 alias pgle="ping www.google.com"
+
+# python's pip fails without these environment variable
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
