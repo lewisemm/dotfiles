@@ -97,11 +97,16 @@ source $ZSH/oh-my-zsh.sh
 # cd into projects folder
 alias cw="cd ~/projects"
 alias gcm="git commit -S"
+alias gch="git checkout"
 alias ga="git add"
 alias gst="git status"
 alias gd="git diff"
 alias pgle="ping www.google.com"
 
-# python's pip fails without these environment variable
-export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8
+# virtualenv wrapper
+export WORKON_HOME=~/Envs
+source /usr/local/bin/virtualenvwrapper.sh
+
+# load direnv on startup
+eval "$(direnv hook zsh)"
+alias da="direnv allow"
