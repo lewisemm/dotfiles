@@ -1,9 +1,9 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=/opt/mongodb-osx-x86_64-4.0.0/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/maina/.oh-my-zsh"
+export PATH=/Applications/Postgres.app/Contents/Versions/9.6/bin:/opt/mongodb-osx-x86_64-4.0.0/bin:$PATH
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -94,18 +94,23 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# cd into projects folder
+# Projects folder
 alias cw="cd ~/projects"
-alias gcm="git commit -S"
-alias gch="git checkout"
-alias ga="git add"
-alias gst="git status"
-alias gd="git diff"
-alias pgle="ping www.google.com"
 
-# virtualenv wrapper
+# Fix some local BS for pipenv
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+# Virtualenvwrapper
 export WORKON_HOME=~/Envs
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3.6
 source /usr/local/bin/virtualenvwrapper.sh
+
+# git aliases
+alias gch="git checkout"
+alias gst="git status"
+alias gcm="git commit"
+alias pgle="ping google.com"
 
 # load direnv on startup
 eval "$(direnv hook zsh)"
