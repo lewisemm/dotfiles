@@ -3,7 +3,7 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/maina/.oh-my-zsh"
-export PATH=/Applications/Postgres.app/Contents/Versions/9.6/bin:/opt/mongodb-osx-x86_64-4.0.0/bin:$PATH
+export PATH=/Applications/Postgres.app/Contents/Versions/9.6/bin:/opt/mongodb-osx-x86_64-4.0.0/bin:/anaconda3/bin/:$PATH
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -103,7 +103,7 @@ export LANG=en_US.UTF-8
 
 # Virtualenvwrapper
 export WORKON_HOME=~/Envs
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3.6
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3.7
 source /usr/local/bin/virtualenvwrapper.sh
 
 # git aliases
@@ -112,6 +112,15 @@ alias gst="git status"
 alias gcm="git commit"
 alias pgle="ping google.com"
 
+# docker shortcuts
+alias dc="docker container"
+alias di="docker image"
+
 # load direnv on startup
 eval "$(direnv hook zsh)"
 alias da="direnv allow"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
