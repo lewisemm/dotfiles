@@ -3,7 +3,7 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/maina/.oh-my-zsh"
-export PATH=/Applications/Postgres.app/Contents/Versions/9.6/bin:/opt/mongodb-osx-x86_64-4.0.0/bin:/anaconda3/bin/:$PATH
+export PATH=/Applications/Postgres.app/Contents/Versions/9.6/bin:/opt/mongodb-osx-x86_64-4.0.0/bin:/:$PATH
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -124,3 +124,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+# remove local branches that have no corresponding tracking branch
+# bta = "Burn Them All!"
+alias bta="git branch --merged >/tmp/merged-branches && vi /tmp/merged-branches && xargs git branch -d </tmp/merged-branches"
