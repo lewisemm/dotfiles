@@ -110,6 +110,7 @@ source /usr/local/bin/virtualenvwrapper.sh
 alias gch="git checkout"
 alias gst="git status"
 alias gcm="git commit -S"
+alias logsig="git log --show-signature"
 alias pgle="ping google.com"
 
 # docker shortcuts
