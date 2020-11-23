@@ -111,11 +111,17 @@ alias gch="git checkout"
 alias gst="git status"
 alias gcm="git commit -S"
 alias logsig="git log --show-signature"
+
+# ping google alias
 alias pgle="ping google.com"
 
 # docker shortcuts
 alias dc="docker container"
 alias di="docker image"
+alias de="docker exec -it "
+
+# docker-compose shorthand
+alias dco="docker compose "
 
 # load direnv on startup
 eval "$(direnv hook zsh)"
