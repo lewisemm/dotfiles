@@ -115,6 +115,10 @@ alias logsig="git log --show-signature"
 # ping google alias
 alias pgle="ping google.com"
 
+# kubectl shorthand
+alias k=kubectl
+alias klf="kubectl logs --follow"
+
 # docker shortcuts
 alias dc="docker container"
 alias di="docker image"
