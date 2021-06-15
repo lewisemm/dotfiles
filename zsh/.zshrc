@@ -127,6 +127,9 @@ alias de="docker exec -it "
 # docker-compose shorthand
 alias dco="docker compose "
 
+# python3 shorthand
+alias p3=python3.7
+
 # load direnv on startup
 eval "$(direnv hook zsh)"
 alias da="direnv allow"
