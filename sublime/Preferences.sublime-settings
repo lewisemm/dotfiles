@@ -6,4 +6,7 @@
   "font_size": 13,
   "tab_size": 2,
   "translate_tabs_to_spaces": true,
+  "remember_open_files": false,
+	"hot_exit": false,
+	"open_files_in_new_window": false,
 }
