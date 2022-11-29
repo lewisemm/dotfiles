@@ -1,5 +1,6 @@
 #!/bin/bash
 
-git config user.email lewisemm@users.noreply.github.com
-git config user.name "Lewis M. Kabui"
-git config core.editor vi
+git config --global user.email lewisemm@users.noreply.github.com
+git config --global user.name "Lewis M. Kabui"
+git config --global core.editor vi
+
