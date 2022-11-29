@@ -110,6 +110,7 @@ source /usr/local/bin/virtualenvwrapper.sh
 alias gch="git checkout"
 alias gst="git status"
 alias gcm="git commit -S"
+alias ga="git add"
 alias logsig="git log --show-signature"
 
 # ping google alias
